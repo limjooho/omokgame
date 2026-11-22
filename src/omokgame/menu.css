@@ -1,0 +1,128 @@
+.app {
+    -fx-font-family: "Malgun Gothic";
+    -fx-background-color: linear-gradient(to bottom right, #fffaf0 0%, #f5fbf7 50%, #f2efff 100%);
+}
+.brand { -fx-font-size: 17px; -fx-font-weight: bold; -fx-text-fill: #187d72; }
+.edition { -fx-font-size: 10px; -fx-text-fill: #868399; }
+.eyebrow { -fx-font-size: 13px; -fx-font-weight: bold; -fx-text-fill: #168478; }
+.title { -fx-font-size: 56px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.subtitle { -fx-font-size: 14px; -fx-text-fill: #76808e; }
+.mode-card {
+    -fx-padding: 22px;
+    -fx-background-radius: 28px;
+    -fx-border-radius: 28px;
+    -fx-border-width: 1.5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(40, 61, 82, 0.09), 24, 0, 0, 9);
+}
+.mint {
+    -fx-background-color: linear-gradient(to bottom, #eefcf5, #ffffff);
+    -fx-border-color: #c9e9dd;
+}
+.lavender {
+    -fx-background-color: linear-gradient(to bottom, #f1edff, #ffffff);
+    -fx-border-color: #dfd6f8;
+}
+.mode-card:hover { -fx-translate-y: -4px; -fx-effect: dropshadow(gaussian, rgba(61, 68, 108, 0.16), 28, 0, 0, 12); }
+.mint:hover, .mint:focused { -fx-border-color: #279c87; }
+.lavender:hover, .lavender:focused { -fx-border-color: #8b6ad8; }
+.mode-card:focused { -fx-border-width: 2.5px; -fx-padding: 21px; }
+.mode-card:pressed { -fx-translate-y: 0; -fx-opacity: 0.9; }
+.mode-badge { -fx-font-size: 11px; -fx-font-weight: bold; -fx-padding: 6px 13px; -fx-background-radius: 20px; }
+.mint .mode-badge { -fx-background-color: #d9f3e8; -fx-text-fill: #247f6a; }
+.lavender .mode-badge { -fx-background-color: #e6defb; -fx-text-fill: #7955b5; }
+.mode-title { -fx-font-size: 29px; -fx-font-weight: bold; -fx-text-fill: #29374a; }
+.mode-description { -fx-font-size: 13px; -fx-text-fill: #758090; }
+.mode-action { -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 12px; -fx-background-radius: 14px; }
+.mint .mode-action { -fx-background-color: #218a76; -fx-text-fill: white; }
+.lavender .mode-action { -fx-background-color: #8662cf; -fx-text-fill: white; }
+.utility { -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 13px 28px; -fx-background-radius: 14px; -fx-border-radius: 14px; -fx-cursor: hand; }
+.records { -fx-background-color: #fff0d4; -fx-text-fill: #9a6a23; -fx-border-color: #f0dfbe; }
+.records:hover, .records:focused { -fx-background-color: #ffe4b2; -fx-border-color: #d5a654; }
+.exit { -fx-background-color: #ffffff; -fx-text-fill: #7f8192; -fx-border-color: #e0deea; }
+.exit:hover, .exit:focused { -fx-background-color: #fce9e6; -fx-text-fill: #b56759; -fx-border-color: #e5b4aa; }
+.footer { -fx-font-size: 11px; -fx-text-fill: #9699a7; }
+.startup-intro { -fx-background-color: linear-gradient(to bottom right, #fffaf0, #f5fbf7, #f2efff); }
+.intro-eyebrow { -fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #187d72; }
+.intro-title { -fx-font-size: 44px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.intro-subtitle { -fx-font-size: 14px; -fx-text-fill: #76808e; }
+.intro-skip { -fx-background-color: transparent; -fx-text-fill: #76808e; -fx-font-size: 12px; -fx-padding: 10px 20px; -fx-cursor: hand; -fx-background-radius: 20px; }
+.intro-skip:hover, .intro-skip:focused { -fx-background-color: #e8eee9; -fx-text-fill: #187d72; }
+
+/* AI 난이도 선택창의 배경과 제목 */
+.difficulty-dialog { -fx-font-family: "Malgun Gothic"; -fx-background-color: linear-gradient(to bottom right, #fffaf0, #f5fbf7, #f2efff); }
+.difficulty-dialog > .difficulty-content { -fx-padding: 30px 32px 16px; }
+.difficulty-eyebrow { -fx-font-size: 11px; -fx-font-weight: bold; -fx-text-fill: #187d72; }
+.difficulty-heading { -fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.difficulty-hint { -fx-font-size: 13px; -fx-text-fill: #76808e; -fx-padding: 0 0 14px; }
+
+/* 같은 줄에 놓이는 두 난이도 카드 */
+.difficulty-card { -fx-padding: 20px; -fx-background-radius: 24px; -fx-border-radius: 24px; -fx-border-width: 2px; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(40, 61, 82, 0.08), 14, 0, 0, 5); }
+.difficulty-normal { -fx-background-color: linear-gradient(to bottom, #e5f8ee, #ffffff); -fx-border-color: #b8dfcd; }
+.difficulty-hard { -fx-background-color: linear-gradient(to bottom, #ffe5df, #fffaf8); -fx-border-color: #f1bbb1; }
+.difficulty-normal:hover, .difficulty-normal:focused { -fx-border-color: #218a76; -fx-background-color: linear-gradient(to bottom, #d5f3e4, #f7fffb); }
+.difficulty-hard:hover, .difficulty-hard:focused { -fx-border-color: #df5353; -fx-background-color: linear-gradient(to bottom, #ffd6ce, #fff6f1); }
+.difficulty-card:hover { -fx-translate-y: -4px; }
+.difficulty-card:pressed { -fx-translate-y: 0; -fx-opacity: 0.9; }
+.difficulty-name { -fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.difficulty-description { -fx-font-size: 13px; -fx-text-fill: #76808e; }
+.difficulty-action { -fx-font-size: 13px; -fx-font-weight: bold; -fx-padding: 8px 0 0; }
+.difficulty-normal .difficulty-action { -fx-text-fill: #218a76; }
+.difficulty-hard .difficulty-action { -fx-text-fill: #cf4848; }
+.difficulty-cancel { -fx-background-color: #e9edf2; -fx-border-color: #dcdfe5; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-padding: 9px 24px; -fx-text-fill: #76808e; -fx-cursor: hand; }
+.difficulty-cancel:hover, .difficulty-cancel:focused { -fx-background-color: #dce2ea; -fx-border-color: #b5bfcc; -fx-text-fill: #27374a; }
+
+/* 왼쪽 아래 톱니바퀴와 환경설정 창 */
+.settings-button { -fx-font-family: "Segoe UI Symbol"; -fx-font-size: 24px; -fx-padding: 0; -fx-min-width: 44px; -fx-min-height: 44px; -fx-background-color: #ffffff; -fx-background-radius: 14px; -fx-border-color: #dce5e0; -fx-border-radius: 14px; -fx-text-fill: #6b8079; -fx-cursor: hand; }
+.settings-button:hover, .settings-button:focused { -fx-background-color: #e1f3eb; -fx-border-color: #218a76; -fx-text-fill: #187d72; }
+.settings-dialog { -fx-font-family: "Malgun Gothic"; -fx-background-color: linear-gradient(to bottom right, #fffaf0, #f5fbf7, #f2efff); }
+.settings-dialog > .settings-content { -fx-padding: 26px; }
+.settings-heading { -fx-font-size: 27px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.settings-hint { -fx-font-size: 12px; -fx-text-fill: #76808e; }
+.settings-section { -fx-padding: 20px; -fx-background-color: rgba(255,255,255,0.85); -fx-background-radius: 18px; -fx-border-color: #dce7e1; -fx-border-radius: 18px; }
+.settings-section-title { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #27374a; }
+.settings-percent { -fx-min-width: 44px; -fx-alignment: center-right; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #218a76; }
+.settings-dialog .check-box { -fx-font-size: 14px; -fx-text-fill: #354759; -fx-cursor: hand; }
+.settings-dialog .slider { -fx-pref-width: 240px; -fx-accent: #218a76; }
+.settings-dialog .slider .thumb { -fx-background-color: #218a76; }
+.settings-preview { -fx-padding: 9px 14px; -fx-background-radius: 10px; -fx-background-color: #e0f3e9; -fx-text-fill: #187d72; -fx-cursor: hand; }
+.settings-preview:hover, .settings-preview:focused { -fx-background-color: #c9ebdd; }
+
+/* 다크 모드는 배경뿐 아니라 글자, 카드와 기본 컨트롤도 함께 바꾼다. */
+.dark-mode { -fx-base: #273447; -fx-background: #171e2b; -fx-control-inner-background: #202b3c; -fx-text-base-color: #e8eef7; -fx-accent: #66cdb4; -fx-focus-color: #66cdb4; -fx-faint-focus-color: rgba(102,205,180,0.16); }
+.app.dark-mode, .dialog-pane.dark-mode, .dark-mode .startup-intro { -fx-background-color: linear-gradient(to bottom right, #141d28, #192b30, #252238); }
+.dark-mode .label { -fx-text-fill: #e1e8f2; }
+.dark-mode .brand, .dark-mode .eyebrow, .dark-mode .intro-eyebrow, .dark-mode .difficulty-eyebrow { -fx-text-fill: #78d8bc; }
+.dark-mode .title, .dark-mode .intro-title, .dark-mode .mode-title, .dark-mode .difficulty-heading, .dark-mode .difficulty-name, .dark-mode .settings-heading, .dark-mode .settings-section-title { -fx-text-fill: #f1f5fb; }
+.dark-mode .edition, .dark-mode .subtitle, .dark-mode .footer, .dark-mode .intro-subtitle, .dark-mode .mode-description, .dark-mode .difficulty-description, .dark-mode .difficulty-hint, .dark-mode .settings-hint { -fx-text-fill: #aebdce; }
+.dark-mode .mint { -fx-background-color: linear-gradient(to bottom, #203d38, #1d2c30); -fx-border-color: #385c51; }
+.dark-mode .lavender { -fx-background-color: linear-gradient(to bottom, #39304e, #262636); -fx-border-color: #58486e; }
+.dark-mode .mint:hover, .dark-mode .mint:focused { -fx-border-color: #78d8bc; }
+.dark-mode .lavender:hover, .dark-mode .lavender:focused { -fx-border-color: #bea2fa; }
+.dark-mode .mint .mode-badge { -fx-background-color: #2b5045; -fx-text-fill: #a0ebcd; }
+.dark-mode .lavender .mode-badge { -fx-background-color: #4b3a66; -fx-text-fill: #ddc7ff; }
+.dark-mode .mode-action { -fx-text-fill: #ffffff; }
+.dark-mode .records { -fx-background-color: #443b2c; -fx-border-color: #6d5c3d; -fx-text-fill: #f4d79c; }
+.dark-mode .records:hover, .dark-mode .records:focused { -fx-background-color: #574a33; -fx-border-color: #c5a261; }
+.dark-mode .exit { -fx-background-color: #293344; -fx-border-color: #465268; -fx-text-fill: #c5cfdf; }
+.dark-mode .exit:hover, .dark-mode .exit:focused { -fx-background-color: #503337; -fx-border-color: #b77b76; -fx-text-fill: #ffcbc4; }
+.dark-mode .settings-button { -fx-background-color: #253440; -fx-border-color: #415b60; -fx-text-fill: #b9d7d1; }
+.dark-mode .settings-button:hover, .dark-mode .settings-button:focused { -fx-background-color: #2c4b46; -fx-border-color: #78d8bc; -fx-text-fill: #a0ebcd; }
+.dark-mode .intro-skip { -fx-text-fill: #aebdce; }
+.dark-mode .intro-skip:hover, .dark-mode .intro-skip:focused { -fx-background-color: #2d4245; -fx-text-fill: #a0ebcd; }
+.dark-mode .difficulty-normal { -fx-background-color: linear-gradient(to bottom, #23463b, #1d2e30); -fx-border-color: #3e715b; }
+.dark-mode .difficulty-hard { -fx-background-color: linear-gradient(to bottom, #503333, #30272e); -fx-border-color: #82514e; }
+.dark-mode .difficulty-normal:hover, .dark-mode .difficulty-normal:focused { -fx-background-color: linear-gradient(to bottom, #2c5747, #213a35); -fx-border-color: #78d8bc; }
+.dark-mode .difficulty-hard:hover, .dark-mode .difficulty-hard:focused { -fx-background-color: linear-gradient(to bottom, #643d3b, #3b2c32); -fx-border-color: #fb9587; }
+.dark-mode .difficulty-normal .difficulty-action { -fx-text-fill: #a0ebcd; }
+.dark-mode .difficulty-hard .difficulty-action { -fx-text-fill: #ffb1a6; }
+.dark-mode .difficulty-cancel { -fx-background-color: #293647; -fx-border-color: #4a5970; -fx-text-fill: #d3ddeb; }
+.dark-mode .difficulty-cancel:hover, .dark-mode .difficulty-cancel:focused { -fx-background-color: #394b61; -fx-border-color: #7d94b2; -fx-text-fill: #ffffff; }
+.dark-mode .settings-section { -fx-background-color: #202e3b; -fx-border-color: #3b4f5d; }
+.dark-mode .settings-percent { -fx-text-fill: #a0ebcd; }
+.dark-mode .settings-dialog .check-box, .settings-dialog.dark-mode .check-box { -fx-text-fill: #e1e8f2; }
+.dark-mode .settings-preview { -fx-background-color: #2c5047; -fx-text-fill: #a0ebcd; }
+.dark-mode .settings-preview:hover, .dark-mode .settings-preview:focused { -fx-background-color: #3b675a; }
+.dark-mode .slider .track { -fx-background-color: #41566b; }
+.dark-mode .slider .thumb { -fx-background-color: #78d8bc; }
+.dark-mode .dialog-pane > .button-bar > .container { -fx-background-color: transparent; }

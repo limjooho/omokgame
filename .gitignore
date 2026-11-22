@@ -1,0 +1,20 @@
+# PC마다 다른 IDE 설정
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# 컴파일 결과
+bin/
+classes/
+out/
+target/
+*.class
+
+# 개인 환경설정과 로컬 인증 정보
+omok-settings.properties
+.env
+.env.*
+!.env.example
+*.log
